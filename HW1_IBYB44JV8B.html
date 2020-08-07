@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <style>
+      input[type="text"],
+      select {
+        width: 70%;
+        padding: 8px 15px;
+        margin: 8px 0;
+        display: inline-block;
+        border-radius: 4px;
+        border-color: white;
+        box-sizing: border-box;
+        font-size: 15px;
+      }
+
+      input[type="submit"] {
+        width: 70px;
+        height: 20px;
+        background-color: purple;
+        color: yellowgreen;
+        margin: 8px 0;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+
+      input[type="submit"]:hover {
+        background-color: blue;
+        width: 90px;
+      }
+
+      .form {
+        border-radius: 5px;
+        background-color: brown;
+        width: 50%;
+        padding: 20px;
+        margin: 5% 20%;
+      }
+      label {
+        font-size: 20px;
+      }
+      textarea {
+        width: 90%;
+      }
+      .all {
+        margin: 0px 0px 0px 50px;
+        padding: 0;
+      }
+      /* MOBILE */
+      @media screen and (max-width: 768px) {
+        /* body {
+          display: none;
+        } */
+        .form {
+          width: 700px;
+        }
+        .all {
+          margin: 0px;
+          padding: 0px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+   
+    <div class="form">
+      <form action="">
+        <div class="all">
+          <label for="firstName">First Name</label>
+          <br />
+          <input placeholder="Your First Name..." type="text" />
+          <br />
+          <label for="lastName">Last Name</label>
+          <br />
+          <input placeholder="Your Last Name..." type="text" />
+          <br />
+          <label for="">Region</label>
+          <br />
+          <select name="" id="">
+            <option value="">Upper West</option>
+            <option value="">Upper East</option>
+            <option value="">North East</option>
+            <option value="">Savannah</option>
+            <option value="">Oti</option>
+            <option value="">Bono East</option>
+            <option value="">Brong Ahafo</option>
+            <option value="">Ahafo</option>
+            <option value="">Ashanti</option>
+            <option value="">Eastern</option>
+            <option value="">Volta</option>
+            <option value="">Western</option>
+            <option value="">Western North</option>
+            <option value="">Greater Accra</option>
+            <option value="">Central</option>
+            <option value="">Northern</option>
+          </select>
+          <br />
+          <label for="">Subject</label>
+          <br />
+          <textarea
+            placeholder="Write something..."
+            name=""
+            id=""
+            cols="30"
+            rows="10"
+          ></textarea>
+          <br />
+          <input type="Submit" value="Submit" />
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
